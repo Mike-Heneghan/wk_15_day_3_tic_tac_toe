@@ -3,10 +3,10 @@ import Tile from './Tile'
 
 const GameGridRow = (props) => {
 
-  const createRow = props.rowArray.map((tileValue) =>{
+  const createRow = props.rowArray.map((tileValue, index) =>{
     return(
-      <div className="tile" >
-      <Tile tile={tileValue}/>
+      <div className="tile" key={index}>
+      <Tile tile={tileValue} rowNumber={props.rowNumber} tileNumber={index} handleButtonClick={props.handleButtonClick}/>
       </div>
     )
   })

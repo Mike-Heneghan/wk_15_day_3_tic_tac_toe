@@ -4,10 +4,10 @@ import GameGridRow from './GameGridRow'
 
 const GameGrid = (props) =>{
 
-  const renderRow = props.gameGrid.map((row) =>{
+  const renderRow = props.gameGrid.map((row, index) =>{
     return (
-    <div className="game-row">
-      <GameGridRow rowArray={row}/>
+    <div className="game-row" key={index}>
+      <GameGridRow rowArray={row} rowNumber={index}  handleButtonClick={props.handleButtonClick}/>
     </div>
   )
   })
