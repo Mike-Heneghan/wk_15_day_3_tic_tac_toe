@@ -6,7 +6,7 @@ class GameBox extends React.Component {
   constructor(props){
     super(props);
       this.state = {
-        grid: [["X","X","X"],["X","X","X"],["X","X","X"]]
+        grid: [[" "," "," "],[" "," "," "],[" "," "," "]]
       }
     }
 

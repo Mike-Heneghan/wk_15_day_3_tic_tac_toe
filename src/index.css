@@ -20,3 +20,8 @@ body {
   min-width: 100px;
   min-height: 100px;
 }
+
+.tile button {
+  min-width: 90%;
+  min-height: 90%;
+}

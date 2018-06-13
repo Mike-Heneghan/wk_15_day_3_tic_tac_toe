@@ -1,44 +1,22 @@
 import React from 'react';
 import Tile from './Tile';
+import GameGridRow from './GameGridRow'
 
 const GameGrid = (props) =>{
 
-  const renderTiles = 
+  const renderRow = props.gameGrid.map((row) =>{
+    return (
+    <div className="game-row">
+      <GameGridRow rowArray={row}/>
+    </div>
+  )
+  })
 
   return (
+
     <div className="game-grid">
-      <div className="game-row">
-        <div className="tile">
-          <Tile />
-        </div>
-        <div className="tile">
-          <Tile />
-        </div>
-        <div className="tile">
-          <Tile />
-        </div>
-      </div>
-      <div className="game-row">
-        <div className="tile">
-          <Tile />
-        </div>
-        <div className="tile">
-          <Tile />
-        </div>
-        <div className="tile">
-          <Tile />
-        </div>
-      </div>
-      <div className = "game-row">
-        <div className="tile">
-          <Tile />
-        </div>
-        <div className="tile">
-          <Tile />
-        </div>
-        <div className="tile">
-          <Tile />
-        </div>
+      <div>
+        {renderRow}
       </div>
     </div>
   )
