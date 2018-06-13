@@ -2,35 +2,43 @@ import React from 'react';
 import Tile from './Tile';
 
 const GameGrid = (props) =>{
+
+  const renderTiles = 
+
   return (
-    <div>
-      <h1>Test1</h1>
-      <div>
-        <Tile />
+    <div className="game-grid">
+      <div className="game-row">
+        <div className="tile">
+          <Tile />
+        </div>
+        <div className="tile">
+          <Tile />
+        </div>
+        <div className="tile">
+          <Tile />
+        </div>
       </div>
-      <div>
-        <Tile />
+      <div className="game-row">
+        <div className="tile">
+          <Tile />
+        </div>
+        <div className="tile">
+          <Tile />
+        </div>
+        <div className="tile">
+          <Tile />
+        </div>
       </div>
-      <div>
-        <Tile />
-      </div>
-      <div>
-        <Tile />
-      </div>
-      <div>
-        <Tile />
-      </div>
-      <div>
-        <Tile />
-      </div>
-      <div>
-        <Tile />
-      </div>
-      <div>
-        <Tile />
-      </div>
-      <div>
-        <Tile />
+      <div className = "game-row">
+        <div className="tile">
+          <Tile />
+        </div>
+        <div className="tile">
+          <Tile />
+        </div>
+        <div className="tile">
+          <Tile />
+        </div>
       </div>
     </div>
   )
