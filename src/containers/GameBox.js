@@ -23,9 +23,9 @@ class GameBox extends React.Component {
     }
 
     if(this.state.turnNumber %2 !== 0){
-      newGrid[yCoord][xCoord] = "X"}
+      newGrid[yCoord][xCoord] = "🐶"}
     else {
-        newGrid[yCoord][xCoord] = "0"
+        newGrid[yCoord][xCoord] = "🦁"
       }
     this.setState({grid: newGrid})
     this.setState(prevState => {turnNumber: (prevState.turnNumber ++)})

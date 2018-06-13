@@ -3,7 +3,7 @@ import React from 'react';
 const Tile = (props) => {
 
   const handleClick = (event) => {
-    console.log("I have been clicked");
+    console.log("I have been clicked", event.target.value);
     props.handleButtonClick(event);
   }
 
